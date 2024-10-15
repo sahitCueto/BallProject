@@ -17,7 +17,7 @@ public class Brick extends GameObject {
     private final int interval = 35;
     final static int HEIGHT = 12;
     final static int WIDTH = 45;
-    private final String brickBreakSoundFile = "sound\\EXPLOSAO.wav";
+    private final String brickBreakSoundFile = "C:\\Users\\ESTUDIANTE\\Workspace\\BallProject\\BrickBreaker\\ImgandSound\\EXPLOSAO.wav";
 
     //The timer that controls the animation. Instantiated in constructor.
     Timer animationTimer;
