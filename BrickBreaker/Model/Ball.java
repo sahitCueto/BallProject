@@ -13,10 +13,10 @@ public class Ball extends GameObject{
 
     @Override
     public void accelerate() {
-        if (x < 0){
-            velocityX = Math.abs(velocityX);
-        }else if (x > rightBound){
-            velocityX = Math.abs(velocityX);
+        if (x < 0) {
+            velocityX = Math.abs(velocityX); // Rebote en el límite izquierdo
+        } else if (x + DIAMETER > rightBound) {
+            velocityX = -Math.abs(velocityX); // Rebote en el límite derecho
         }
         if (y < 0){
             velocityY = Math.abs(velocityY);
