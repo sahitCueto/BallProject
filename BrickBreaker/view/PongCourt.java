@@ -116,7 +116,7 @@ public class PongCourt extends JPanel {
             }
         });
 
-        music = new Sounds("ImgandSound/DigitalStream.wav");
+        music = new Sounds("BrickBreaker/ImgandSound/DigitalStream.wav");
         music.playSound();
     }
 
@@ -213,7 +213,7 @@ public class PongCourt extends JPanel {
         for (int i = 0; i < balls.size(); i++) {
             Intersection paddle_ball = paddle.intersects(balls.get(i));
             if (started && paddle_ball != Intersection.NONE) {
-                (new Sounds("ImgandSound/WoodWhack.wav")).playSoundOnce();
+                (new Sounds("BrickBreaker/ImgandSound/WoodWhack.wav")).playSoundOnce();
                 balls.get(i).bounce(paddle.intersects(balls.get(i)));
                 balls.get(i).velocityX += ((balls.get(i).x + balls.get(i).width / 2) - (paddle.x + paddle.width / 2)) / (paddle.width / 9);
                 if (paddle.velocityX > 0) {
